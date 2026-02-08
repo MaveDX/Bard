@@ -1,0 +1,447 @@
+/* Modern Music Player Styles */
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+window {
+    background: transparent;
+}
+
+/* GTK theme mode — let the system theme show through */
+window.gtk-theme {
+    background: @theme_bg_color;
+}
+
+window.gtk-theme .tab-button {
+    color: @theme_fg_color;
+}
+
+window.gtk-theme .tab-button.active {
+    color: @theme_fg_color;
+}
+
+window.gtk-theme label,
+window.gtk-theme .time-label {
+    color: @theme_fg_color;
+}
+
+.tab-button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    min-width: 120px;
+}
+
+.tab-button:hover {
+    background-image: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tab-button.active {
+    background-image: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Album art with rounded corners */
+.album-art-frame {
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.album-art-frame image {
+    border-radius: 20px;
+}
+
+/* CAVA visualizer area */
+.cava-area {
+    background: transparent;
+    border: none;
+}
+
+.song-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.song-artist {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.song-album {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.time-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+}
+
+/* Force ALL buttons transparent - override GTK theme */
+button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    outline: none;
+    color: #ffffff;
+}
+
+button:hover {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    box-shadow: none;
+}
+
+button:active,
+button:checked {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    box-shadow: none;
+}
+
+/* Compact control buttons */
+button.control-button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 14px;
+    color: #ffffff;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    padding: 0;
+}
+
+button.control-button.small-control {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+button.control-button:hover {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+button.control-button:active {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+button.play-button {
+    min-width: 52px;
+    min-height: 52px;
+    font-size: 17px;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+button.play-button:hover {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+button.play-button:active {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+button.icon-button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+button.icon-button:hover {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+button.icon-button.active {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+/* icon-button overrides control-button when both present */
+button.control-button.icon-button {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    min-width: 36px;
+    min-height: 36px;
+    box-shadow: none;
+}
+
+button.control-button.icon-button:hover {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+button.control-button.icon-button.active {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+.lyrics-text {
+    background: transparent;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.lyrics-current {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Queue sidebar - frosted glass look */
+.queue-sidebar {
+    background-color: transparent;
+    background-image: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.queue-search {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.queue-sidebar treeview {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    -GtkTreeView-horizontal-separator: 0;
+    -GtkTreeView-vertical-separator: 2;
+}
+
+.queue-sidebar treeview:selected {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+}
+
+.queue-sidebar treeview:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.queue-sidebar treeview cell {
+    padding: 4px 8px;
+}
+
+.library-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin: 4px;
+    padding: 12px;
+}
+
+.library-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Scale (sliders) styling */
+scale {
+    background: transparent;
+}
+
+/* Waveform progress area */
+.waveform-area {
+    background: transparent;
+    border: none;
+}
+
+scale.volume-scale trough {
+    min-height: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+scale.volume-scale highlight {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 3px;
+}
+
+scale.volume-scale slider {
+    min-width: 14px;
+    min-height: 14px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    margin: -5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+scale.volume-scale slider:hover {
+    background: #ffffff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* ScrolledWindow */
+scrolledwindow {
+    background: transparent;
+    border: none;
+}
+
+/* TreeView for library and queue */
+treeview {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+}
+
+treeview:selected {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Entry (search box) */
+entry {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+entry:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+entry placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Remove focus borders from all elements */
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+*:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+    background-image: none;
+    border: none;
+}
+
+button.control-button:focus {
+    outline: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+button.control-button:checked,
+button.control-button:focus:active {
+    outline: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+button.icon-button:focus {
+    outline: none;
+    box-shadow: none;
+    background-image: none;
+    border: none;
+}
+
+scale:focus {
+    outline: none;
+}
+
+scale slider:focus {
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+entry:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+    box-shadow: none;
+}
+
+/* TextView */
+textview {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+textview text {
+    background: transparent;
+}
+
+/* Lyrics */
+.lyrics-scroll {
+    background: transparent;
+}
+
+.lyrics-dim label {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 15px;
+    transition: all 300ms ease;
+}
+
+.lyrics-active label {
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 300ms ease;
+}

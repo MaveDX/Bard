@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Bard
+Comment=A modern music player for MPD
+Exec=bard
+Icon=bard
+Terminal=false
+Type=Application
+Categories=Audio;Music;Player;AudioVideo;
+Keywords=music;player;mpd;audio;
+StartupWMClass=bard

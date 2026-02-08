@@ -1,0 +1,40 @@
+[package]
+name = "bard"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gtk = "0.18"
+gdk = "0.18"
+gdk-pixbuf = "0.18"
+gio = "0.18"
+glib = "0.18"
+cairo-rs = "0.18"
+
+# Image processing for color extraction
+image = "0.25"
+
+# MPD client
+mpd = "0.1"
+
+# Regex for lyrics parsing
+regex = "1.10"
+
+# Error handling
+anyhow = "1.0"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Directory utilities
+dirs = "5.0"
+
+# Audio metadata for embedded artwork
+id3 = "1.1"
+metaflac = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
