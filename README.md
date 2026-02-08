@@ -2,6 +2,16 @@
 
 A music player for MPD written in Rust and GTK 3. Features four-corner gradient backgrounds extracted from album art, a CAVA audio visualizer, waveform seeking, synchronized lyrics, and a frosted-glass queue sidebar.
 
+<img width="487" height="997" alt="image" src="https://github.com/user-attachments/assets/9119244f-81df-42fa-99e8-ffbe4e96591f" />
+
+<img width="487" height="997" alt="image" src="https://github.com/user-attachments/assets/892adec1-3481-4276-8e86-e8cdfd40d4d1" />
+
+<img width="487" height="997" alt="image" src="https://github.com/user-attachments/assets/bd2d3192-da34-4079-8578-44d4a15e0367" />
+
+<img width="487" height="997" alt="image" src="https://github.com/user-attachments/assets/91d4fa05-d94e-47a0-ac91-7cd50f8f4855" />
+
+
+
 ## Features
 
 ### Visual
